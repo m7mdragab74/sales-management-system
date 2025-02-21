@@ -1,65 +1,59 @@
-Sales Management System
+## Sales Management System
 This is a simple Sales Management System implemented in Dart. The system allows you to manage products, customers, and orders. It provides basic functionalities such as adding products, customers, and orders, as well as viewing all products, customers, and orders.
 
-Features
-Product Management:
+## Features
+- Product Management:
 
-Add new products with an ID, name, and price.
+- Add new products with an ID, name, and price.
 
-View all products.
+- View all products.
 
-Customer Management:
+- Customer Management:
 
-Add new customers with an ID, name, phone number, and email.
+- Add new customers with an ID, name, phone number, and email.
 
-View all customers.
+- View all customers.
 
-Order Management:
+- Order Management:
 
-Create new orders by associating them with a customer and adding order items (products with quantities).
+* Create new orders by associating them with a customer and adding order items (products with quantities).
 
-View all orders with details including the customer, date, and total amount.
+* View all orders with details including the customer, date, and total amount.
 
-Getting Started
+## Getting Started
 Prerequisites
-Dart SDK installed on your machine. You can download it from here.
+- Dart SDK installed on your machine. You can download it from here.
 
-Running the Application
-Clone the repository or download the source code.
+- Running the Application
+- Clone the repository or download the source code.
 
-Navigate to the project directory.
+- Navigate to the project directory.
 
-Run the application using the Dart SDK:
-dart run bin/main.dart
+- Run the application using the Dart SDK:
+  dart run bin/main.dart
 
 Follow the on-screen instructions to interact with the system.
 
-Project Structure
+## Project Structure
 The project is organized into several files and directories:
+sales-management-system/
+├── bin/
+│   └── main.dart
+├── lib/
+│   ├── models/
+│   │   ├── customer.dart
+│   │   ├── customer_repo.dart
+│   │   ├── order.dart
+│   │   ├── order_item.dart
+│   │   ├── order_repo.dart
+│   │   ├── product.dart
+│   │   └── product_repo.dart
+│   └── services/
+│       └── sales_service.dart
+├── README.md
+└── LICENSE
 
-bin/main.dart: The entry point of the application. It contains the main loop and user interaction logic.
-
-lib/models/: Contains the data models and repositories.
-
-customer.dart: Defines the Customer class.
-
-customer_repo.dart: Defines the CustomerRepo class for managing customers.
-
-order.dart: Defines the Order class.
-
-order_item.dart: Defines the OrderItem class.
-
-order_repo.dart: Defines the OrderRepo class for managing orders.
-
-product.dart: Defines the Product class.
-
-product_repo.dart: Defines the ProductRepo class for managing products.
-
-lib/services/: Contains the service layer.
-
-sales_service.dart: Defines the SalesService class which acts as a facade to interact with the repositories.
-
-Usage
+## Usage
 When you run the application, you will be presented with a menu:
 
 1. Add Product
@@ -83,14 +77,14 @@ View All Orders: Displays a list of all orders with details including the custom
 
 Exit: Exits the application.
 
-Example
-Adding a Product
-Enter Your Choice: 1
-Enter Product id: 101
-Enter Product name: Laptop
-Enter Product price: 1200.00
-Product added successfully.
-Adding a Customer
+## Example
+- Adding a Product
+- Enter Your Choice: 1
+- Enter Product id: 101
+- Enter Product name: Laptop
+- Enter Product price: 1200.00
+- Product added successfully.
+- Adding a Customer
 
 Enter Your Choice: 2
 Enter Customer id: 201
